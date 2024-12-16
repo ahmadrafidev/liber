@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Liber: Intelligent Documentation Generator
 
-## Getting Started
+Liber simplifies and automates the creation of developer-friendly documentation. By extracting annotated comments from your codebase and transforming them into well-structured, readable formats, this tool ensures that your documentation is always comprehensive, consistent, and easy to maintain.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Overview](#overview)
+- [Key Features](#key-features)
+- [Workflow](#workflow)
+- [Conclusion](#conclusion)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Overview
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Keeping documentation up-to-date can be a time-consuming challenge. Liber streamlines this process by parsing annotated code (e.g., JSDoc, Python docstrings, JavaDoc) and producing polished documentation in formats like web pages, PDFs, or markdown files. This ensures your team and external developers have access to clear, consistent, and searchable documentation.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Key Features
 
-## Learn More
+### JSDoc/Comment Extraction
+- **Comprehensive Parsing**:
+  - Extracts annotated comments from multiple programming languages, including:
+    - **JSDoc** (JavaScript/TypeScript)
+    - **Docstrings** (Python)
+    - **JavaDoc** (Java)
+  - Maps code functionality (e.g., functions, classes, modules) into structured documentation sections.
+- **Readable Outputs**:
+  - Automatically formats extracted information for better readability.
 
-To learn more about Next.js, take a look at the following resources:
+### Improvement Suggestions
+- **Annotation Quality**:
+  - Detects unclear, vague, or missing annotations and suggests improvements.
+  - Recommends standardized documentation structures for consistency.
+- **Enhanced Clarity**:
+  - Provides suggestions for improving descriptions of complex sections.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Examples and Diagrams
+- **Usage Examples**:
+  - Automatically generates usage examples based on function signatures and sample inputs.
+- **Visualizations**:
+  - Creates diagrams for:
+    - Class hierarchies
+    - Data flows
+    - API endpoints
+- **Embedded Snippets**:
+  - Includes code snippets for quick reference.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Searchable Output
+- **Interactive Documentation**:
+  - Converts documentation into interactive formats, including:
+    - Web pages
+    - PDFs
+    - Markdown files
+- **Search Functionality**:
+  - Full-text search enables quick navigation to specific sections or topics.
 
-## Deploy on Vercel
+### Integration with Development Tools
+- **GitHub Actions**:
+  - Automates documentation generation on every pull request or release.
+- **Documentation Platforms**:
+  - Integrates seamlessly with tools like:
+    - **Docusaurus**
+    - **ReadTheDocs**
+    - **MkDocs**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Workflow
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Annotate Your Code**:
+   - Add JSDoc, Python docstrings, or JavaDoc comments to your codebase.
+2. **Run the Generator**:
+   - Execute the tool to parse annotations and generate documentation.
+3. **Review the Output**:
+   - Inspect the generated documentation for clarity and completeness.
+4. **Export or Deploy**:
+   - Save the documentation as markdown, PDFs, or deploy it as a searchable web page.
+5. **Automate**:
+   - Use GitHub Actions to regenerate documentation automatically on code updates.
+
+## Conclusion
+
+The Documentation Generator is your go-to solution for automating the creation of high-quality, developer-friendly documentation. By simplifying the process and providing actionable suggestions, it saves time, improves clarity, and ensures consistency across your documentation.
+
+Start using the Documentation Generator today and take your developer documentation to the next level! 🚀
+
+
+Liber: Write Code. Leave the Story to Us
